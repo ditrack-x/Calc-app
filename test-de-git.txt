@@ -1,1 +1,2 @@
 Hola soy un archivo de texto de prueba.
+Prueba número dos.
