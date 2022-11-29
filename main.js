@@ -148,7 +148,7 @@ function resolver(){
             res = parseFloat(op1) * parseFloat(op2);
             break;
     }
-    result.textContent = res;
+    result.textContent = res.toLocaleString("en-US");
 }
 
 function borrar(){
@@ -175,3 +175,29 @@ function PlusMinus_btn(){
 }
 
 
+// ----------------------- Dark/Light Mode ---------------- //
+const changeDisplay = document.getElementById("change-btn");
+const moon = document.getElementById("moon");
+const sun = document.getElementById("sun");
+
+sun.addEventListener("click",lightMode)
+moon.addEventListener("click", darkMode)
+
+function darkMode(){
+    console.log("Modo oscuro")
+    document.querySelector("body").style.background = "#262738";
+    document.getElementById("calc-pad").style.backgroundColor = "#314563";
+    document.getElementById("calculadora-layout").style.backgroundColor = "#31456305";
+    document.getElementById("calculadora-layout").style.border = "2px solid #0afbff";
+    document.getElementById("calculadora-layout").style.boxShadow = "0px 0px 50px 0.1px #6781a8";
+
+    for(let i=0; i<=9; i++){
+        document.getElementsByClassName("btn-operator-symbol")[i].style.background = "#485c74"
+        document.getElementsByClassName("btn-operator-symbol")[i].style.border = "2px solid #0afbff"
+    }
+}
+
+function lightMode(){
+    console.log("Modo claro");
+    document.location.reload();
+}
