@@ -148,7 +148,8 @@ function resolver(){
             res = parseFloat(op1) * parseFloat(op2);
             break;
     }
-    result.textContent = res;
+    result.textContent = res.toLocaleString("en-US");
+    console.log(typeof(res))
 }
 
 function borrar(){
