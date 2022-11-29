@@ -9,7 +9,7 @@
 body{
     justify-content: center;
     margin: auto;
-    padding: 40px;
+    padding: 0px;
     background: linear-gradient(252.56deg, #00FF75 8.01%, #286BCF 50.19%, #FB4285 91.22%);
     backdrop-filter: blur(180px);
     background-repeat: no-repeat;
@@ -182,4 +182,15 @@ button:hover{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+footer{
+    text-align: center;
+    color: white;
+}
+
+footer svg{
+    display: inline-block;
+    padding-top: 3px;
+    color: white;
 }
